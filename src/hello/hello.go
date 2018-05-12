@@ -9,7 +9,8 @@ import (
 var num1, num2 float64 = 7.3, 2.6 // declare variable outside func
 var num6, num7 float32 = 4.5, 3.2
 
-
+const integer int = 7
+const text string = "hello"
 
 func main() {
     fmt.Println("hello, world\n")
@@ -18,6 +19,7 @@ func main() {
     random()
     // num3, num4 := 3.7, 9.8 // declare var inside func - is guessing status as float64?, no need to specify
     fmt.Println(add(num6, num7))
+    fmt.Println(integer, text)
 }
 
 func square() {
