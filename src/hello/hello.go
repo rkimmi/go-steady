@@ -11,6 +11,7 @@ var num6, num7 float32 = 4.5, 3.2
 
 const integer int = 7
 const text string = "hello"
+const text2 string = "goodbye"
 
 func main() {
     fmt.Println("hello, world\n")
@@ -21,6 +22,7 @@ func main() {
     fmt.Println(add(num6, num7))
     fmt.Println(integer, text)
     fmt.Println(twoStrings("hi", "there"))
+    fmt.Println(text2)
 }
 
 func square() {
@@ -35,6 +37,6 @@ func add(x, y float32) float32 {
     return x + y
 }
 
-func twoStrings(a, b string) (string, string) { // have to specify both types is returned separately
+func twoStrings(a, b string) (string, string) { // have to specify both types if returned separately
     return a, b
 }
