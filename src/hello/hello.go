@@ -20,6 +20,7 @@ func main() {
     // num3, num4 := 3.7, 9.8 // declare var inside func - is guessing status as float64?, no need to specify
     fmt.Println(add(num6, num7))
     fmt.Println(integer, text)
+    fmt.Println(twoStrings("hi", "there"))
 }
 
 func square() {
@@ -32,4 +33,8 @@ func random() {
 
 func add(x, y float32) float32 {
     return x + y
+}
+
+func twoStrings(a, b string) (string, string) { // have to specify both types is returned separately
+    return a, b
 }
